@@ -1,0 +1,338 @@
+.nav {
+  opacity: 0.4;
+  position: fixed;
+  margin-top: calc(50vh - 3px);
+  z-index: 2;
+}
+
+.nav:hover {
+  opacity: 1;
+}
+
+.nav_bar {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100vh;
+  max-height: calc(100% - 4px);
+  top: 0;
+  z-index: 1;
+  width: 300px;
+  border: 2px solid #2b2c3e;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+  left: -304px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: #131317;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid #2b2c3e;
+}
+
+a:hover {
+  background-color: #2b2c3e;
+  color: whitesmoke;
+}
+
+#home {
+  height: 100vh;
+  width: 100vw;
+}
+
+#welcomeText {
+  font-size: 32px;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+
+#welcomeText:hover {
+  background-color: RGB(18, 58, 71);
+}
+
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  background-color: #d7ddea;
+  font-family: sans-serif;
+  color: #131317;
+  overflow-y: hidden;
+}
+
+#bubbleSort .Ele {
+  position: relative;
+  background-color: #949ebb;
+  width: calc(100vw - 10px);
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 50px;
+  margin-top: calc(100vh - 50vh - 197px);
+  padding-right: 10px;
+}
+
+#bubbleSort .Ele .subele {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 10px;
+  background-color: #2b2c3e;
+  border: 2px solid #d7ddea;
+  min-width: 0;
+}
+
+#bubbleSort .Ele .no_of_ele {
+  position: absolute;
+  bottom: calc(50vh + 60px);
+  margin-left: 10px;
+}
+
+#bubbleSort .Ele .progress {
+  position: absolute;
+  bottom: calc(50vh + 40px);
+  margin-left: 10px;
+}
+
+#mergeSort .Ele {
+  position: relative;
+  background-color: #949ebb;
+  width: calc(100vw - 10px);
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 50px;
+  margin-top: calc(100vh - 50vh - 197px);
+  padding-right: 10px;
+}
+
+#mergeSort .Ele .subele {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 10px;
+  background-color: #2b2c3e;
+  border: 2px solid #d7ddea;
+  min-width: 0;
+}
+
+#mergeSort .Ele .no_of_ele {
+  position: absolute;
+  bottom: calc(50vh + 60px);
+  margin-left: 10px;
+}
+
+#mergeSort .Ele .progress {
+  position: absolute;
+  bottom: calc(50vh + 40px);
+  margin-left: 10px;
+}
+
+#selectionSort .Ele, #insertionSort .Ele, #quickSort .Ele, #countingSort .Ele, #radixSort .Ele {
+  position: relative;
+  background-color: #949ebb;
+  width: calc(100vw - 10px);
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 50px;
+  margin-top: calc(100vh - 50vh - 197px);
+  padding-right: 10px;
+}
+
+#selectionSort .Ele .subele, #insertionSort .Ele .subele, #quickSort .Ele .subele, #countingSort .Ele .subele, #radixSort .Ele .subele {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 10px;
+  background-color: #2b2c3e;
+  border: 2px solid #d7ddea;
+  min-width: 0;
+}
+
+#selectionSort .Ele .no_of_ele, #insertionSort .Ele .no_of_ele, #quickSort .Ele .no_of_ele, #countingSort .Ele .no_of_ele, #radixSort .Ele .no_of_ele {
+  position: absolute;
+  bottom: calc(50vh + 80px);
+  margin-left: 10px;
+}
+
+#selectionSort .Ele .progress, #insertionSort .Ele .progress, #quickSort .Ele .progress, #countingSort .Ele .progress, #radixSort .Ele .progress {
+  position: absolute;
+  bottom: calc(50vh + 60px);
+  margin-left: 10px;
+}
+
+#selectionSort .Ele .note, #insertionSort .Ele .note, #quickSort .Ele .note, #countingSort .Ele .note, #radixSort .Ele .note {
+  position: absolute;
+  bottom: calc(50vh + 40px);
+  margin-left: 10px;
+  opacity: 0.8;
+}
+
+.subele {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.subele .val {
+  margin: 0;
+  position: relative;
+  top: -30px;
+  font-family: sans-serif;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #2b2c3e;
+  border-radius: 1px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-box-shadow: 0px 0px 0px .000000;
+          box-shadow: 0px 0px 0px .000000;
+  border: 1px solid #2b2c3e;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #949ebb;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  padding: 0 10px 0 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+button {
+  background-color: #d7ddea;
+  border: 2px ridge #2b2c3e;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 30px;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.start, .sort, .stop {
+  width: 30vw;
+  margin-inline: auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #2b2c3e;
+  color: whitesmoke;
+}
+
+#bubbleSort, #insertionSort, #selectionSort, #mergeSort, #quickSort, #countingSort, #radixSort {
+  height: 100vh;
+  /* Hide the browser's default checkbox */
+}
+
+#bubbleSort .container, #insertionSort .container, #selectionSort .container, #mergeSort .container, #quickSort .container, #countingSort .container, #radixSort .container {
+  position: absolute;
+  bottom: calc(50vh + 50px);
+  right: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #d7ddea, #949ebb);
+  -webkit-box-shadow: 5px 5px 22px #d7ddea, -5px -5px 22px #949ebb;
+          box-shadow: 5px 5px 22px #d7ddea, -5px -5px 22px #949ebb;
+  padding: 5px 10px 5px 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.364);
+}
+
+#bubbleSort .container input, #insertionSort .container input, #selectionSort .container input, #mergeSort .container input, #quickSort .container input, #countingSort .container input, #radixSort .container input {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+@import "./var";
+
+.nav{
+    opacity: 0.4;
+    position: fixed;
+    margin-top: calc(50vh - 3px);
+    z-index: 2;
+}
+
+.nav:hover{
+    opacity: 1;
+}
+
+.nav_bar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100vh;
+    max-height: calc(100% - 4px);
+    top: 0;
+    z-index: 1;
+    width: 300px;
+    border: 2px solid $highlights;
+    backdrop-filter: blur(100px);
+    left: -304px;
+    transition: 0.5s;
+}
+
+a{
+    text-decoration: none;
+    color: $text;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid $highlights;
+}
+
+a:hover{
+    background-color: $highlights;
+    color: whitesmoke;
+}

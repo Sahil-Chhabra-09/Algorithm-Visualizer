@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Algorithms Sort Visualizer</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="icon" href="./icon.png">
+    <script type="module" src="./bubble.js" defer></script>
+    <script type="module" src="./selection.js" defer></script>
+    <script type="module" src="./insertion.js" defer></script>
+    <script type="module" src="./merge.js" defer></script>
+    <script type="module" src="./quick.js" defer></script>
+    <script type="module" src="./counting.js" defer></script>
+    <script type="module" src="./radix.js" defer></script>
+    <script src="./home_scroll.js" defer></script>
+    <script src="./nav.js" defer></script>
+    <script src="./fun.js" type="module" defer></script>
+</head>
+<body>
+    <button class="nav">></button>
+    <div class="nav_bar">
+        <a id="homePage" href="#home" class="p1">Home</a>
+        <a id="bubbleAlgo" href="#bubbleSort" class="p1">Bubble Sort</a>
+        <a id="selectionAlgo" href="#selectionSort" class="p2">Selection Sort</a>
+        <a id="insertionAlgo" href="#insertionSort" class="p3">Insertion Sort</a>
+        <a id="quickAlgo" href="#quickSort" class="p4">Quick Sort</a>
+        <a id="mergeAlgo" href="#mergeSort" class="p4">Merge Sort</a>
+        <a id="countingAlgo" href="#countingSort" class="p4">Counting Sort</a>
+        <a id="radixAlgo" href="#radixSort" class="p4">Radix Sort</a>
+    </div>
+    <div id="home">
+        <iframe src='https://my.spline.design/algorithms-7f809776d3c201671655d3b695a3cc28/' frameborder='0' width='100%' height='100%'></iframe>
+        <a id="welcomeText" href="#bubbleSort">Visualize</a>
+    </div>
+    <div id="bubbleSort">
+        <div class="input">
+            <input class="elements" type="range" min = "5" max ="30" value="15">
+        </div>
+        <section class="buttons">
+            <button class="start">Add Elements</button>
+            <button class="sort">Bubble Sort It</button>
+            <button class="stop">Stop</button>
+        </section>
+        
+        <div class="Ele">
+            <label class="container">
+                <span>Speed Up</span>
+                <input type="range" class="speedup" min="100" max = "1000" value="500" step="100">
+                <!-- <span class="checkmark"></span> -->
+            </label>
+            <p class="no_of_ele">Number of Elements:</p>
+            <p class="progress">Current State: Not Started.</p>
+            <hr>
+        </div>
+    </div>
+    <div id="selectionSort">
+        <div class="input">
+            <input class="elements" type="range" min = "10" max ="50" value="20">
+        </div>
+        <section class="buttons">
+            <button class="start">Add Elements</button>
+            <button class="sort">Selection Sort It</button>
+            <button class="stop">Stop</button>
+        </section>
+        
+        <div class="Ele">
+            <label class="container">
+                <span>Speed Up</span>
+                <input type="range" class="speedup" min="100" max = "1000" value="500" step="100">
+                <!-- <span class="checkmark"></span> -->
+            </label>
+            <p class="no_of_ele">Number of Elements:</p>
+            <p class="progress">Current State: Not Started.</p>
+            <p class="note">(Note: Minimum element is denoted by red.)</p>
+            <hr>
+        </div>
+    </div>
+    <div id="insertionSort">
+        <div class="input">
+            <input class="elements" type="range" min = "10" max ="50" value="20">
+        </div>
+        <section class="buttons">
+            <button class="start">Add Elements</button>
+            <button class="sort">Insertion Sort It</button>
+            <button class="stop">Stop</button>
+        </section>
+        
+        <div class="Ele">
+            <label class="container">
+                <span>Speed Up</span>
+                <input type="range" class="speedup" min="100" max = "1000" value="500" step="100">
+                <!-- <span class="checkmark"></span> -->
+            </label>
+            <p class="no_of_ele">Number of Elements:</p>
+            <p class="progress">Current State: Not Started.</p>
+            <p class="note">(Note: Key element is denoted by red.)</p>
+            <hr>
+        </div>
+    </div>
+    <div id="quickSort">
+        <div class="input">
+            <input class="elements" type="range" min = "10" max ="50" value="20">
+        </div>
+        <section class="buttons">
+            <button class="start">Add Elements</button>
+            <button class="sort">Quick Sort It</button>
+            <button class="stop">Stop</button>
+        </section>
+        <div class="Ele">
+            <label class="container">
+                <span>Speed Up</span>
+                <input type="range" class="speedup" min="100" max = "1000" value="500" step="100">
+                <!-- <span class="checkmark"></span> -->
+            </label>
+            <p class="no_of_ele">Number of Elements:</p>
+            <p class="progress">Current State: Not Started.</p>
+            <p class="note">(Note: Red = Pivot Element) (ith pointer = green)</p>
+            <hr>
+        </div>
+    </div>
+    <div id="mergeSort">
+        <div class="input">
+            <input class="elements" type="range" min = "10" max ="50" value="20">
+        </div>
+        <section class="buttons">
+            <button class="start">Add Elements</button>
+            <button class="sort">Merge Sort It</button>
+            <button class="stop">Stop</button>
+        </section>
+        <div class="Ele">
+            <label class="container">
+                <span>Speed Up</span>
+                <input type="range" class="speedup" min="100" max = "1000" value="500" step="100">
+                <!-- <span class="checkmark"></span> -->
+            </label>
+            <p class="no_of_ele">Number of Elements:</p>
+            <p class="progress">Current State: Not Started.</p>
+            <hr>
+        </div>
+    </div>
+    <div id="countingSort">
+        <div class="input">
+            <input class="elements" type="range" min = "10" max ="50" value="20">
+        </div>
+        <section class="buttons">
+            <button class="start">Add Elements</button>
+            <button class="sort">Counting Sort It</button>
+            <button class="stop">Stop</button>
+        </section>
+        <div class="Ele">
+            <label class="container">
+                <span>Speed Up</span>
+                <input type="range" class="speedup" min="100" max = "1000" value="500" step="100">
+                <!-- <span class="checkmark"></span> -->
+            </label>
+            <p class="no_of_ele">Number of Elements:</p>
+            <p class="progress">Current State: Not Started.</p>
+            <p class="note">(Note: Red = Pivot Element) (ith pointer = green)</p>
+            <hr>
+        </div>
+    </div>
+    <div id="radixSort">
+        <div class="input">
+            <input class="elements" type="range" min = "10" max ="50" value="20">
+        </div>
+        <section class="buttons">
+            <button class="start">Add Elements</button>
+            <button class="sort">Radix Sort It</button>
+            <button class="stop">Stop</button>
+        </section>
+        <div class="Ele">
+            <label class="container">
+                <span>Speed Up</span>
+                <input type="range" class="speedup" min="100" max = "1000" value="500" step="100">
+                <!-- <span class="checkmark"></span> -->
+            </label>
+            <p class="no_of_ele">Number of Elements:</p>
+            <p class="progress">Current State: Not Started.</p>
+            <p class="note">(Note: Red = Pivot Element) (ith pointer = green)</p>
+            <hr>
+        </div>
+    </div>
+</body>
+</html>
